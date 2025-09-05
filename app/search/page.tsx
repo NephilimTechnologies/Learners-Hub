@@ -308,6 +308,16 @@ export default function SearchPage() {
                 <SelectItem value="Science">Science</SelectItem>
                 <SelectItem value="Physics">Physics</SelectItem>
                 <SelectItem value="Social Studies">Social Studies</SelectItem>
+                <SelectItem value="CRE">CRE</SelectItem>
+                <SelectItem value="Entrepreneurship">Entrepreneurship</SelectItem>
+                <SelectItem value="Biology">Biology</SelectItem>
+                <SelectItem value="Art">Art</SelectItem>
+                <SelectItem value="Luganda">Luganda</SelectItem>
+                <SelectItem value="ICT">ICT</SelectItem>
+                <SelectItem value="Chemistry">Chemistry</SelectItem>
+                <SelectItem value="Biology Practical">Biology Practical</SelectItem>
+                <SelectItem value="ICT Practical">ICT Practical</SelectItem>
+                <SelectItem value=""></SelectItem>
               </SelectContent>
             </Select>
 
