@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { FileText, BookOpen, Search, Download } from "lucide-react"
 import Link from "next/link"
 
-export default function MiddleClassPage() {
+export default function TopClassPage() {
   const resources = [
     {
       title: "Lesson Notes",
@@ -58,9 +58,9 @@ export default function MiddleClassPage() {
 
         {/* Page Header */}
         <div className="text-center mb-12">
-          <h1 className="font-playfair font-bold text-4xl md:text-5xl mb-4 text-balance">Middle Class Resources</h1>
+          <h1 className="font-playfair font-bold text-4xl md:text-5xl mb-4 text-balance">Top Class Resources</h1>
           <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
-            Access all learning materials for Middle Class including lesson notes, schemes of work, past papers, and
+            Access all learning materials for Top Class including lesson notes, schemes of work, past papers, and
             holiday packages.
           </p>
         </div>
