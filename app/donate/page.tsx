@@ -116,7 +116,7 @@ export default function DonatePage() {
                 <h4 className="font-semibold mb-3">Account Details:</h4>
                 <div className="space-y-2">
                   <div>
-                    <span className="text-sm text-muted-foreground">Account Number:</span>
+                    <span className="text-sm text-muted-foreground">Equity Account Number:</span>
                     <button
                       onClick={() => navigator.clipboard.writeText("1004101515985")}
                       className="block font-mono text-lg font-bold text-primary hover:bg-primary/10 px-3 py-2 rounded transition-colors cursor-pointer mx-auto mt-1"
@@ -125,7 +125,6 @@ export default function DonatePage() {
                       1004101515985
                     </button>
                   </div>
-                  <div className="text-sm text-muted-foreground">Equity Account Number</div>
                   <div className="text-sm text-muted-foreground">Click the account number to copy</div>
                 </div>
               </div>
