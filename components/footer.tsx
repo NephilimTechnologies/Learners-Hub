@@ -80,7 +80,7 @@ export function Footer() {
                   <Instagram className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://youtube.com/@Hackerug06"
+                  href="https://youtube.com/@SeraphimTechnologies"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors"
@@ -93,9 +93,9 @@ export function Footer() {
 
           {/* Sponsor */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-foreground">Sponsored By</h4>
+            <h4 className="font-semibold text-foreground">Powered By</h4>
             <div className="space-y-2">
-              <p className="text-sm font-medium text-primary">Nephilim Technologies</p>
+              <p className="text-sm font-medium text-primary">Seraphim Technologies</p>
               <p className="text-xs text-muted-foreground">CEO: Walusimbi Mathew</p>
               <p className="text-xs text-muted-foreground">Empowering education through technology</p>
             </div>
@@ -104,7 +104,7 @@ export function Footer() {
 
         <div className="border-t mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 Learners Hub. All rights reserved. Powered by Nephilim Technologies.
+            © 2025 Learners Hub. All rights reserved. Powered by Seraphim Technologies.
           </p>
         </div>
       </div>
