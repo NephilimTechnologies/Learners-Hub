@@ -135,7 +135,7 @@ const lessonNotes = [
   },
 ]
 
-export default function MiddleClassLessonNotesPage() {
+export default function TopClassLessonNotesPage() {
   const [searchQuery, setSearchQuery] = useState("")
   const [filteredNotes, setFilteredNotes] = useState(lessonNotes)
 
@@ -171,8 +171,8 @@ export default function MiddleClassLessonNotesPage() {
             Nursery
           </Link>
           <span>/</span>
-          <Link href="/nursery/middle-class" className="hover:text-primary">
-            Middle Class
+          <Link href="/nursery/top-class" className="hover:text-primary">
+            Top Class
           </Link>
           <span>/</span>
           <span className="text-foreground">Lesson Notes</span>
@@ -182,8 +182,8 @@ export default function MiddleClassLessonNotesPage() {
         <div className="text-center mb-8">
           <h1 className="font-playfair font-bold text-4xl md:text-5xl mb-4 text-balance">Middle Class Lesson Notes</h1>
           <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
-            Access comprehensive lesson notes for Middle Class covering literacy, mathematics, health habits, creative
-            arts, science, and social studies following the New Lower Secondary Curriculum (NLSC).
+            Access comprehensive lesson notes for Top Class covering literacy, mathematics, health habits, creative
+            arts, science, and social studies.
           </p>
         </div>
 
