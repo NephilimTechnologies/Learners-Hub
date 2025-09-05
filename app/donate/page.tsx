@@ -125,6 +125,7 @@ export default function DonatePage() {
                       1004101515985
                     </button>
                   </div>
+                  <div className="text-sm text-muted-foreground">Equity Account Number</div>
                   <div className="text-sm text-muted-foreground">Click the account number to copy</div>
                 </div>
               </div>
