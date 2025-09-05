@@ -79,7 +79,7 @@ export default function HomePage() {
             New Curriculum Notes
             <span className="text-primary block">(NLSC)</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance">Everyone deserves education</p>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance">"Educating the Nation"</p>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty">
             Access comprehensive study materials, lesson notes, past papers, and schemes of work for nursery, primary,
             and secondary education levels.
