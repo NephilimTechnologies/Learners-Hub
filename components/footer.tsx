@@ -93,7 +93,7 @@ export function Footer() {
 
           {/* Sponsor */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-foreground">Sponsored By</h4>
+            <h4 className="font-semibold text-foreground">Powered By</h4>
             <div className="space-y-2">
               <p className="text-sm font-medium text-primary">Nephilim Technologies</p>
               <p className="text-xs text-muted-foreground">CEO: Walusimbi Mathew</p>
@@ -104,7 +104,7 @@ export function Footer() {
 
         <div className="border-t mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 Learners Hub. All rights reserved. Powered by Nephilim Technologies.
+            © 2025 Learners Hub. All rights reserved. Powered by Nephilim Technologies.
           </p>
         </div>
       </div>
