@@ -1,188 +1,210 @@
 "use client"
 
 import { useState } from "react"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Search, Filter, Download, Eye } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { FileText, Search, Download } from "lucide-react"
-import Link from "next/link"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
-// schemes of work data for Baby Class
-const schemesofWork = [
+// Sample schemes of work data for baby class
+const schemesData = [
   {
     id: 1,
-    title: "Letter Recognition - A to E",
-    subject: "Literacy",
-    description: "Introduction to uppercase and lowercase letters A, B, C, D, E with tracing exercises",
-    date: "2024-01-15",
-    url: "/baby-class/literacy/letter-recognition-a-e.pdf",
+    title: "English Language Scheme - Term 1",
+    subject: "English",
+    term: "Term 1",
+    weeks: "1-12",
+    description: "Complete English language scheme covering basic vocabulary, phonics, and simple sentences",
+    downloadUrl: "/schemes/baby-class-english-term1.pdf",
+    previewUrl: "/preview/baby-class-english-term1",
   },
   {
     id: 2,
-    title: "Number Recognition - 1 to 5",
+    title: "Mathematics Scheme - Term 1",
     subject: "Mathematics",
-    description: "Basic number recognition and counting from 1 to 5 with visual aids",
-    date: "2024-01-16",
-    url: "/baby-class/mathematics/number-recognition-1-5.pdf",
+    term: "Term 1",
+    weeks: "1-12",
+    description: "Number recognition, counting 1-20, basic shapes and patterns",
+    downloadUrl: "/schemes/baby-class-math-term1.pdf",
+    previewUrl: "/preview/baby-class-math-term1",
   },
   {
     id: 3,
-    title: "Body Parts and Health",
+    title: "Health Habits Scheme - Term 1",
     subject: "Health Habits",
-    description: "Learning about basic body parts and simple health habits",
-    date: "2024-01-17",
-    url: "/baby-class/health/body-parts-health.pdf",
+    term: "Term 1",
+    weeks: "1-12",
+    description: "Personal hygiene, healthy eating, and basic safety habits",
+    downloadUrl: "/schemes/baby-class-health-term1.pdf",
+    previewUrl: "/preview/baby-class-health-term1",
   },
   {
     id: 4,
-    title: "Colors and Shapes",
-    subject: "Creative Arts",
-    description: "Introduction to primary colors and basic shapes through art activities",
-    date: "2024-01-18",
-    url: "/baby-class/arts/colors-shapes.pdf",
+    title: "Literacy Scheme - Term 2",
+    subject: "Literacy",
+    term: "Term 2",
+    weeks: "1-12",
+    description: "Reading readiness, letter recognition, and pre-writing skills",
+    downloadUrl: "/schemes/baby-class-literacy-term2.pdf",
+    previewUrl: "/preview/baby-class-literacy-term2",
   },
   {
     id: 5,
-    title: "Letter Recognition - F to J",
-    subject: "Literacy",
-    description: "Continuing with letters F, G, H, I, J with phonetic sounds",
-    date: "2024-01-22",
-    url: "/baby-class/literacy/letter-recognition-f-j.pdf",
+    title: "English Language Scheme - Term 2",
+    subject: "English",
+    term: "Term 2",
+    weeks: "1-12",
+    description: "Advanced vocabulary building and simple story comprehension",
+    downloadUrl: "/schemes/baby-class-english-term2.pdf",
+    previewUrl: "/preview/baby-class-english-term2",
+  },
+  {
+    id: 6,
+    title: "Mathematics Scheme - Term 3",
+    subject: "Mathematics",
+    term: "Term 3",
+    weeks: "1-12",
+    description: "Addition and subtraction basics, measurement concepts",
+    downloadUrl: "/schemes/baby-class-math-term3.pdf",
+    previewUrl: "/preview/baby-class-math-term3",
   },
 ]
 
-export default function BabyClassSchemesOfWorkPage() {
-  const [searchQuery, setSearchQuery] = useState("")
-  const [filteredNotes, setFilteredNotes] = useState(schemesofWork)
+export default function BabyClassSchemesPage() {
+  const [searchTerm, setSearchTerm] = useState("")
+  const [selectedSubject, setSelectedSubject] = useState("all")
+  const [selectedTerm, setSelectedTerm] = useState("all")
 
-  const handleSearch = (query: string) => {
-    setSearchQuery(query)
-    if (query.trim() === "") {
-      setFilteredNotes(schemesofWork)
-    } else {
-      const filtered = schemesofWork.filter(
-        (note) =>
-          note.title.toLowerCase().includes(query.toLowerCase()) ||
-          note.subject.toLowerCase().includes(query.toLowerCase()) ||
-          note.description.toLowerCase().includes(query.toLowerCase()),
-      )
-      setFilteredNotes(filtered)
-    }
-  }
+  // Get unique subjects and terms for filters
+  const subjects = [...new Set(schemesData.map((scheme) => scheme.subject))]
+  const terms = [...new Set(schemesData.map((scheme) => scheme.term))]
 
-  const subjects = [...new Set(schemesofWork.map((note) => note.subject))]
+  // Filter schemes based on search and filters
+  const filteredSchemes = schemesData.filter((scheme) => {
+    const matchesSearch =
+      scheme.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      scheme.description.toLowerCase().includes(searchTerm.toLowerCase())
+    const matchesSubject = selectedSubject === "all" || scheme.subject === selectedSubject
+    const matchesTerm = selectedTerm === "all" || scheme.term === selectedTerm
+
+    return matchesSearch && matchesSubject && matchesTerm
+  })
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-
       <div className="container mx-auto px-4 py-8">
-        {/* Breadcrumb */}
-        <nav className="flex items-center space-x-2 text-sm text-muted-foreground mb-8">
-          <Link href="/" className="hover:text-primary">
-            Home
-          </Link>
-          <span>/</span>
-          <Link href="/nursery" className="hover:text-primary">
-            Nursery
-          </Link>
-          <span>/</span>
-          <Link href="/nursery/baby-class" className="hover:text-primary">
-            Baby Class
-          </Link>
-          <span>/</span>
-          <span className="text-foreground">Lesson Notes</span>
-        </nav>
-
-        {/* Page Header */}
-        <div className="text-center mb-8">
-          <h1 className="font-playfair font-bold text-4xl md:text-5xl mb-4 text-balance">Baby Class Lesson Notes</h1>
-          <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
-            Access comprehensive schemes of Work for Baby Class covering literacy, mathematics, health habits, and creative
-            arts.
+        {/* Header */}
+        <div className="mb-8">
+          <h1 className="text-4xl font-bold text-foreground mb-2">Baby Class - Schemes of Work</h1>
+          <p className="text-muted-foreground text-lg">
+            Comprehensive teaching schemes and curriculum plans for baby class
           </p>
         </div>
 
-        {/* Search Bar */}
-        <div className="mb-8">
-          <div className="relative max-w-md mx-auto">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
-            <Input
-              placeholder="Search lesson notes..."
-              className="pl-10"
-              value={searchQuery}
-              onChange={(e) => handleSearch(e.target.value)}
-            />
-          </div>
-        </div>
+        {/* Search and Filters */}
+        <div className="mb-8 space-y-4">
+          <div className="flex flex-col md:flex-row gap-4">
+            {/* Search Bar */}
+            <div className="relative flex-1">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
+              <Input
+                placeholder="Search schemes of work..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="pl-10"
+              />
+            </div>
 
-        {/* Subject Filter */}
-        <div className="mb-8">
-          <div className="flex flex-wrap justify-center gap-2">
-            <Button variant={searchQuery === "" ? "default" : "outline"} size="sm" onClick={() => handleSearch("")}>
-              All Subjects
-            </Button>
-            {subjects.map((subject) => (
-              <Button key={subject} variant="outline" size="sm" onClick={() => handleSearch(subject)}>
-                {subject}
-              </Button>
-            ))}
+            {/* Subject Filter */}
+            <Select value={selectedSubject} onValueChange={setSelectedSubject}>
+              <SelectTrigger className="w-full md:w-48">
+                <Filter className="h-4 w-4 mr-2" />
+                <SelectValue placeholder="Filter by Subject" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Subjects</SelectItem>
+                {subjects.map((subject) => (
+                  <SelectItem key={subject} value={subject}>
+                    {subject}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+
+            {/* Term Filter */}
+            <Select value={selectedTerm} onValueChange={setSelectedTerm}>
+              <SelectTrigger className="w-full md:w-48">
+                <Filter className="h-4 w-4 mr-2" />
+                <SelectValue placeholder="Filter by Term" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Terms</SelectItem>
+                {terms.map((term) => (
+                  <SelectItem key={term} value={term}>
+                    {term}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
           </div>
         </div>
 
         {/* Results Count */}
         <div className="mb-6">
-          <p className="text-muted-foreground text-center">
-            Showing {filteredNotes.length} of {lessonNotes.length} lesson notes
+          <p className="text-muted-foreground">
+            Showing {filteredSchemes.length} of {schemesData.length} schemes of work
           </p>
         </div>
 
-        {/* Lesson Notes Grid */}
-        {filteredNotes.length === 0 ? (
-          <Card>
-            <CardContent className="p-8 text-center">
-              <Search className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-              <h3 className="text-lg font-semibold mb-2">No schemes of work found</h3>
-              <p className="text-muted-foreground">Try adjusting your search terms</p>
-            </CardContent>
-          </Card>
-        ) : (
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {filteredNotes.map((note) => (
-              <Card key={note.id} className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="flex items-start justify-between mb-2">
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                      <FileText className="h-5 w-5 text-primary" />
-                    </div>
-                    <Badge variant="secondary">{note.subject}</Badge>
-                  </div>
-                  <CardTitle className="text-lg">{note.title}</CardTitle>
-                  <CardDescription className="text-sm">{note.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs text-muted-foreground">{new Date(note.date).toLocaleDateString()}</span>
-                    <Button size="sm" asChild>
-                      <Link href={note.url}>
-                        <Download className="h-4 w-4 mr-2" />
-                        Download PDF
-                      </Link>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+        {/* Schemes Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredSchemes.map((scheme) => (
+            <Card key={scheme.id} className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="flex justify-between items-start mb-2">
+                  <Badge variant="secondary">{scheme.subject}</Badge>
+                  <Badge variant="outline">{scheme.term}</Badge>
+                </div>
+                <CardTitle className="text-lg">{scheme.title}</CardTitle>
+                <CardDescription className="text-sm">Weeks {scheme.weeks}</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground mb-4">{scheme.description}</p>
+                <div className="flex gap-2">
+                  <Button size="sm" className="flex-1">
+                    <Eye className="h-4 w-4 mr-2" />
+                    Preview
+                  </Button>
+                  <Button size="sm" variant="outline" className="flex-1 bg-transparent">
+                    <Download className="h-4 w-4 mr-2" />
+                    Download
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        {/* No Results */}
+        {filteredSchemes.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-muted-foreground text-lg">No schemes of work found matching your criteria.</p>
+            <Button
+              variant="outline"
+              onClick={() => {
+                setSearchTerm("")
+                setSelectedSubject("all")
+                setSelectedTerm("all")
+              }}
+              className="mt-4"
+            >
+              Clear Filters
+            </Button>
           </div>
         )}
       </div>
-
-      <Footer />
-      <WhatsAppFloat />
     </div>
   )
-        }
+}
