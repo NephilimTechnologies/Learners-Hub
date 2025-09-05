@@ -19,7 +19,7 @@ const lessonNotes = [
     subject: "Literacy",
     description: "Introduction to uppercase and lowercase letters A, B, C, D, E with tracing exercises",
     date: "2024-01-15",
-    url: "/baby-class/literacy/letter-recognition-a-e.pdf",
+    url: "/middle-class/literacy/letter-recognition-a-e.pdf",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const lessonNotes = [
     subject: "Mathematics",
     description: "Basic number recognition and counting from 1 to 5 with visual aids",
     date: "2024-01-16",
-    url: "/baby-class/mathematics/number-recognition-1-5.pdf",
+    url: "/middle-class/mathematics/number-recognition-1-5.pdf",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const lessonNotes = [
     subject: "Health Habits",
     description: "Learning about basic body parts and simple health habits",
     date: "2024-01-17",
-    url: "/baby-class/health/body-parts-health.pdf",
+    url: "/middle-class/health/body-parts-health.pdf",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const lessonNotes = [
     subject: "Creative Arts",
     description: "Introduction to primary colors and basic shapes through art activities",
     date: "2024-01-18",
-    url: "/baby-class/arts/colors-shapes.pdf",
+    url: "/middle-class/arts/colors-shapes.pdf",
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ const lessonNotes = [
     subject: "Literacy",
     description: "Continuing with letters F, G, H, I, J with phonetic sounds",
     date: "2024-01-22",
-    url: "/baby-class/literacy/letter-recognition-f-j.pdf",
+    url: "/middle-class/literacy/letter-recognition-f-j.pdf",
   },
 ]
 
