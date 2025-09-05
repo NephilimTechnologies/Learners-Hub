@@ -317,7 +317,7 @@ export default function SearchPage() {
                 <SelectItem value="Chemistry">Chemistry</SelectItem>
                 <SelectItem value="Biology Practical">Biology Practical</SelectItem>
                 <SelectItem value="ICT Practical">ICT Practical</SelectItem>
-                <SelectItem value=""></SelectItem>
+                <SelectItem value="Chemistry Practical">Chemistry Practical</SelectItem>
               </SelectContent>
             </Select>
 
