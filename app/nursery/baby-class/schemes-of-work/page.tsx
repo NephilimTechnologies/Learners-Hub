@@ -8,8 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
-// Sample schemes of work data for baby class
-const schemesData = [
+const schemesOfWorkData = [
   {
     id: 1,
     title: "English Language Scheme - Term 1",
@@ -77,12 +76,10 @@ export default function BabyClassSchemesPage() {
   const [selectedSubject, setSelectedSubject] = useState("all")
   const [selectedTerm, setSelectedTerm] = useState("all")
 
-  // Get unique subjects and terms for filters
-  const subjects = [...new Set(schemesData.map((scheme) => scheme.subject))]
-  const terms = [...new Set(schemesData.map((scheme) => scheme.term))]
+  const subjects = [...new Set(schemesOfWorkData.map((scheme) => scheme.subject))]
+  const terms = [...new Set(schemesOfWorkData.map((scheme) => scheme.term))]
 
-  // Filter schemes based on search and filters
-  const filteredSchemes = schemesData.filter((scheme) => {
+  const filteredSchemes = schemesOfWorkData.filter((scheme) => {
     const matchesSearch =
       scheme.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       scheme.description.toLowerCase().includes(searchTerm.toLowerCase())
@@ -154,7 +151,7 @@ export default function BabyClassSchemesPage() {
         {/* Results Count */}
         <div className="mb-6">
           <p className="text-muted-foreground">
-            Showing {filteredSchemes.length} of {schemesData.length} schemes of work
+            Showing {filteredSchemes.length} of {schemesOfWorkData.length} schemes of work
           </p>
         </div>
 
