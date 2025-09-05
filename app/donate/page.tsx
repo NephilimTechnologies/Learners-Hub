@@ -136,7 +136,7 @@ export default function DonatePage() {
         {/* Sponsor Recognition */}
         <Card className="bg-muted/30">
           <CardContent className="p-8 text-center">
-            <h3 className="font-playfair font-bold text-2xl mb-4">Proudly Sponsored By</h3>
+            <h3 className="font-playfair font-bold text-2xl mb-4">Proudly Powered By</h3>
             <div className="space-y-2">
               <p className="text-xl font-semibold text-primary">Nephilim Technologies</p>
               <p className="text-muted-foreground">CEO: Walusimbi Mathew</p>
