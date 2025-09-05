@@ -32,7 +32,7 @@ const schemesOfWorkData = [
   {
     id: 3,
     title: "Health Habits Scheme - Term 1",
-    subject: "Health Habits",
+    subject: "Health",
     term: "Term 1",
     weeks: "1-12",
     description: "Personal hygiene, healthy eating, and basic safety habits",
@@ -71,7 +71,7 @@ const schemesOfWorkData = [
   },
 ]
 
-export default function MiddleClassSchemesPage() {
+export default function TopClassSchemesPage() {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedSubject, setSelectedSubject] = useState("all")
   const [selectedTerm, setSelectedTerm] = useState("all")
@@ -94,9 +94,9 @@ export default function MiddleClassSchemesPage() {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-foreground mb-2">Middle Class - Schemes of Work</h1>
+          <h1 className="text-4xl font-bold text-foreground mb-2">Top Class - Schemes of Work</h1>
           <p className="text-muted-foreground text-lg">
-            Comprehensive teaching schemes and curriculum plans for Middle class
+            Comprehensive teaching schemes and curriculum plans for Top class
           </p>
         </div>
 
