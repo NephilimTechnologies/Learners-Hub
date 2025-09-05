@@ -313,11 +313,15 @@ export default function SearchPage() {
                 <SelectItem value="Biology">Biology</SelectItem>
                 <SelectItem value="Art">Art</SelectItem>
                 <SelectItem value="Luganda">Luganda</SelectItem>
-                <SelectItem value="ICT">ICT</SelectItem>
+                <SelectItem value="ICT Theory">ICT Theory</SelectItem>
                 <SelectItem value="Chemistry">Chemistry</SelectItem>
                 <SelectItem value="Biology Practical">Biology Practical</SelectItem>
                 <SelectItem value="ICT Practical">ICT Practical</SelectItem>
-                <SelectItem value="Chemistry Practical">Chemistry Practical</SelectItem>
+                <SelectItem value="Physics Practical">Physics Practical</SelectItem>
+                <SelectItem value="Geography">Geography</SelectItem>
+                <SelectItem value="Art Practical">Art Practical</SelectItem>
+                <SelectItem value="IRE">IRE</SelectItem>
+                <SelectItem value="History">History</SelectItem>
               </SelectContent>
             </Select>
 
