@@ -173,20 +173,6 @@ export default function SearchPage() {
                 <SelectItem value="Science">Science</SelectItem>
                 <SelectItem value="Physics">Physics</SelectItem>
                 <SelectItem value="Social Studies">Social Studies</SelectItem>
-                <SelectItem value="CRE">CRE</SelectItem>
-                <SelectItem value="Entrepreneurship">Entrepreneurship</SelectItem>
-                <SelectItem value="Biology">Biology</SelectItem>
-                <SelectItem value="Art">Art</SelectItem>
-                <SelectItem value="Luganda">Luganda</SelectItem>
-                <SelectItem value="ICT Theory">ICT Theory</SelectItem>
-                <SelectItem value="Chemistry">Chemistry</SelectItem>
-                <SelectItem value="Biology Practical">Biology Practical</SelectItem>
-                <SelectItem value="ICT Practical">ICT Practical</SelectItem>
-                <SelectItem value="Physics Practical">Physics Practical</SelectItem>
-                <SelectItem value="Geography">Geography</SelectItem>
-                <SelectItem value="Art Practical">Art Practical</SelectItem>
-                <SelectItem value="IRE">IRE</SelectItem>
-                <SelectItem value="History">History</SelectItem>
               </SelectContent>
             </Select>
 
