@@ -246,4 +246,5 @@ export default function SearchPage() {
       <WhatsAppFloat />
     </div>
   )
-}
+    }
+    
