@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import Link from "next/link"
 
-export default function PrimaryOneSchemesPage() {
+export default function PrimarySevenSchemesPage() {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedSubject, setSelectedSubject] = useState("all")
 
@@ -62,9 +62,9 @@ export default function PrimaryOneSchemesPage() {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-foreground mb-4">Primary One Schemes of Work</h1>
+          <h1 className="text-4xl font-bold text-foreground mb-4">Primary Seven Schemes of Work</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Download detailed schemes of work for Primary One curriculum planning
+            Download detailed schemes of work for Primary Seven curriculum planning
           </p>
         </div>
 
@@ -129,7 +129,7 @@ export default function PrimaryOneSchemesPage() {
         {/* Back Navigation */}
         <div className="text-center">
           <Button variant="outline" asChild>
-            <Link href="/primary/primary-1">← Back to Primary One Resources</Link>
+            <Link href="/primary/primary-1">← Back to Primary Seven Resources</Link>
           </Button>
         </div>
       </div>
