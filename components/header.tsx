@@ -53,7 +53,7 @@ export function Header() {
             <Image src="/logo.jpg" alt="Learners Hub Logo" width={40} height={40} className="rounded-full" />
             <div className="hidden sm:block">
               <h1 className="font-playfair font-bold text-xl text-primary">Learners Hub</h1>
-              <p className="text-xs text-muted-foreground">Everyone deserves education</p>
+              <p className="text-xs text-muted-foreground">"Educating the Nation"</p>
             </div>
           </Link>
 
