@@ -14,21 +14,21 @@ export default function PrimaryOnePage() {
     {
       title: "Lesson Notes",
       description:
-        "Comprehensive lesson notes for Primary One covering Mathematics, English, Science, and Social Studies",
+        "Comprehensive lesson notes for Primary Two covering Mathematics, English, Science, and Social Studies",
       icon: BookOpen,
       href: "/primary/primary-2/lesson-notes",
       color: "bg-blue-500",
     },
     {
       title: "Schemes of Work",
-      description: "Detailed schemes of work for Primary One curriculum planning",
+      description: "Detailed schemes of work for Primary Two curriculum planning",
       icon: FileText,
       href: "/primary/primary-2/schemes-of-work",
       color: "bg-green-500",
     },
     {
       title: "Past Papers",
-      description: "Previous examination papers and practice tests for Primary One",
+      description: "Previous examination papers and practice tests for Primary Two",
       icon: Calendar,
       href: "/primary/primary-2/past-papers",
       color: "bg-purple-500",
