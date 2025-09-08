@@ -180,7 +180,7 @@ export default function TopClassLessonNotesPage() {
 
         {/* Page Header */}
         <div className="text-center mb-8">
-          <h1 className="font-playfair font-bold text-4xl md:text-5xl mb-4 text-balance">Baby Class Lesson Notes</h1>
+          <h1 className="font-playfair font-bold text-4xl md:text-5xl mb-4 text-balance">Top Class Lesson Notes</h1>
           <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
             Access comprehensive lesson notes for Top Class covering literacy, mathematics, health habits, creative
             arts, science, and social studies.
