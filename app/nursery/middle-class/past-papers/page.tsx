@@ -78,7 +78,7 @@ const pastPapersData = [
   },
 ]
 
-export default function BabyClassPastPapersPage() {
+export default function MiddleClassPastPapersPage() {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedSubject, setSelectedSubject] = useState("all")
   const [selectedYear, setSelectedYear] = useState("all")
@@ -106,9 +106,9 @@ export default function BabyClassPastPapersPage() {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-foreground mb-2">Baby Class - Past Papers</h1>
+          <h1 className="text-4xl font-bold text-foreground mb-2">Middle Class - Past Papers</h1>
           <p className="text-muted-foreground text-lg">
-            Previous examination papers and assessments for baby class students
+            Previous examination papers and assessments for middle class students
           </p>
         </div>
 
