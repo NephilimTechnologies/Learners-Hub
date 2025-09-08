@@ -51,9 +51,9 @@ export function Header() {
           {/* Logo and Brand */}
           <Link href="/" className="flex items-center space-x-3">
             <Image src="/logo.jpg" alt="Learners Hub Logo" width={40} height={40} className="rounded-full" />
-            <div className="hidden sm:block">
+            <div>
               <h1 className="font-playfair font-bold text-xl text-primary">Learners Hub</h1>
-              <p className="text-xs text-muted-foreground">"Educating the Nation"</p>
+              <p className="text-xs text-muted-foreground">Educating the Nation</p>
             </div>
           </Link>
 
@@ -232,4 +232,5 @@ export function Header() {
       </div>
     </header>
   )
-}
+      }
+      
