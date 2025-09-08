@@ -86,9 +86,9 @@ export default function PrimaryOneNotesPage() {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-foreground mb-4">Primary One Lesson Notes</h1>
+          <h1 className="text-4xl font-bold text-foreground mb-4">Primary Three Lesson Notes</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Download comprehensive lesson notes for Primary One students
+            Download comprehensive lesson notes for Primary Three students
           </p>
         </div>
 
