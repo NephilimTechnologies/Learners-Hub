@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import Link from "next/link"
 
-export default function PrimaryOnePastPapersPage() {
+export default function PrimaryThreePastPapersPage() {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedSubject, setSelectedSubject] = useState("all")
 
@@ -62,9 +62,9 @@ export default function PrimaryOnePastPapersPage() {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-foreground mb-4">Primary One Past Papers</h1>
+          <h1 className="text-4xl font-bold text-foreground mb-4">Primary Three Past Papers</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Download previous examination papers and practice tests for Primary One
+            Download previous examination papers and practice tests for Primary Three
           </p>
         </div>
 
