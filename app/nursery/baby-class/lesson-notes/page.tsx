@@ -183,7 +183,7 @@ export default function BabyClassLessonNotesPage() {
           <h1 className="font-playfair font-bold text-4xl md:text-5xl mb-4 text-balance">Baby Class Lesson Notes</h1>
           <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
             Access comprehensive lesson notes for Baby Class covering literacy, mathematics, health habits, creative
-            arts, science, and social studies following the New Lower Secondary Curriculum (NLSC).
+            arts, science, and social studies.
           </p>
         </div>
 
