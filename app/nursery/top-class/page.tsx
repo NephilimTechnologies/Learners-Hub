@@ -53,7 +53,7 @@ export default function TopClassPage() {
             Nursery
           </Link>
           <span>/</span>
-          <span className="text-foreground">Baby Class</span>
+          <span className="text-foreground">Top Class</span>
         </nav>
 
         {/* Page Header */}
