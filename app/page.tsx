@@ -37,25 +37,25 @@ export default function HomePage() {
       title: "Lesson Notes",
       description: "Comprehensive notes for all subjects",
       icon: FileText,
-      count: "0+",
+      count: "500+",
     },
     {
       title: "Past Papers",
       description: "Previous examination papers",
       icon: Search,
-      count: "0+",
+      count: "200+",
     },
     {
       title: "Schemes of Work",
       description: "Structured learning plans",
       icon: BookOpen,
-      count: "0+",
+      count: "150+",
     },
     {
       title: "Holiday Packages",
       description: "Vacation learning materials",
       icon: Download,
-      count: "0+",
+      count: "100+",
     },
   ]
 
@@ -79,7 +79,7 @@ export default function HomePage() {
             New Curriculum Notes
             <span className="text-primary block">(NLSC)</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance">"Educating the Nation"</p>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance">Everyone deserves education</p>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto text-pretty">
             Access comprehensive study materials, lesson notes, past papers, and schemes of work for nursery, primary,
             and secondary education levels.

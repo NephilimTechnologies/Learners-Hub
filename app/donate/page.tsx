@@ -116,7 +116,7 @@ export default function DonatePage() {
                 <h4 className="font-semibold mb-3">Account Details:</h4>
                 <div className="space-y-2">
                   <div>
-                    <span className="text-sm text-muted-foreground">Equity Account Number:</span>
+                    <span className="text-sm text-muted-foreground">Account Number:</span>
                     <button
                       onClick={() => navigator.clipboard.writeText("1004101515985")}
                       className="block font-mono text-lg font-bold text-primary hover:bg-primary/10 px-3 py-2 rounded transition-colors cursor-pointer mx-auto mt-1"
@@ -135,7 +135,7 @@ export default function DonatePage() {
         {/* Sponsor Recognition */}
         <Card className="bg-muted/30">
           <CardContent className="p-8 text-center">
-            <h3 className="font-playfair font-bold text-2xl mb-4">Proudly Powered By</h3>
+            <h3 className="font-playfair font-bold text-2xl mb-4">Proudly Sponsored By</h3>
             <div className="space-y-2">
               <p className="text-xl font-semibold text-primary">Nephilim Technologies</p>
               <p className="text-muted-foreground">CEO: Walusimbi Mathew</p>
