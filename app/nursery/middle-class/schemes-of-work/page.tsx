@@ -71,7 +71,7 @@ const schemesOfWorkData = [
   },
 ]
 
-export default function BabyClassSchemesPage() {
+export default function MiddleClassSchemesPage() {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedSubject, setSelectedSubject] = useState("all")
   const [selectedTerm, setSelectedTerm] = useState("all")
@@ -94,9 +94,9 @@ export default function BabyClassSchemesPage() {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-foreground mb-2">Baby Class - Schemes of Work</h1>
+          <h1 className="text-4xl font-bold text-foreground mb-2">Middle Class - Schemes of Work</h1>
           <p className="text-muted-foreground text-lg">
-            Comprehensive teaching schemes and curriculum plans for baby class
+            Comprehensive teaching schemes and curriculum plans for middle class
           </p>
         </div>
 
