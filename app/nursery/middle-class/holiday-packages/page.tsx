@@ -84,7 +84,7 @@ const holidayPackagesData = [
   },
 ]
 
-export default function BabyClassHolidayPackagesPage() {
+export default function MiddleClassHolidayPackagesPage() {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedHoliday, setSelectedHoliday] = useState("all")
   const [selectedYear, setSelectedYear] = useState("all")
@@ -113,7 +113,7 @@ export default function BabyClassHolidayPackagesPage() {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-foreground mb-2">Baby Class - Holiday Packages</h1>
+          <h1 className="text-4xl font-bold text-foreground mb-2">Middle Class - Holiday Packages</h1>
           <p className="text-muted-foreground text-lg">
             Fun and educational holiday activity packages to keep learning exciting during breaks
           </p>
