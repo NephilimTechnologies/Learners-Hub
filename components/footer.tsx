@@ -13,7 +13,7 @@ export function Footer() {
               <Image src="/logo.jpg" alt="Learners Hub Logo" width={40} height={40} className="rounded-full" />
               <div>
                 <h3 className="font-playfair font-bold text-lg text-primary">Learners Hub</h3>
-                <p className="text-sm text-muted-foreground">Everyone deserves education</p>
+                <p className="text-sm text-muted-foreground">ducating the Nation</p>
               </div>
             </div>
             <p className="text-sm text-muted-foreground">
@@ -93,9 +93,9 @@ export function Footer() {
 
           {/* Sponsor */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-foreground">Sponsored By</h4>
+            <h4 className="font-semibold text-foreground">Powered By</h4>
             <div className="space-y-2">
-              <p className="text-sm font-medium text-primary">Nephilim Technologies</p>
+              <p className="text-sm font-medium text-primary">Seraphim Technologies</p>
               <p className="text-xs text-muted-foreground">CEO: Walusimbi Mathew</p>
               <p className="text-xs text-muted-foreground">Empowering education through technology</p>
             </div>
@@ -104,7 +104,7 @@ export function Footer() {
 
         <div className="border-t mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 Learners Hub. All rights reserved. Powered by Nephilim Technologies.
+            © 2025 Learners Hub. All rights reserved. Powered by Seraphim Technologies.
           </p>
         </div>
       </div>
