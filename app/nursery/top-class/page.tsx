@@ -6,34 +6,34 @@ import { Button } from "@/components/ui/button"
 import { FileText, BookOpen, Search, Download } from "lucide-react"
 import Link from "next/link"
 
-export default function BabyClassPage() {
+export default function TopClassPage() {
   const resources = [
     {
       title: "Lesson Notes",
       description: "Comprehensive lesson notes for Baby Class",
       icon: FileText,
-      href: "/nursery/baby-class/lesson-notes",
+      href: "/nursery/top-class/lesson-notes",
       count: "25+ Notes",
     },
     {
       title: "Schemes of Work",
       description: "Structured learning plans and curricula",
       icon: BookOpen,
-      href: "/nursery/baby-class/schemes-of-work",
+      href: "/nursery/top-class/schemes-of-work",
       count: "12+ Schemes",
     },
     {
       title: "Past Papers",
       description: "Previous examination and assessment papers",
       icon: Search,
-      href: "/nursery/baby-class/past-papers",
+      href: "/nursery/top-class/past-papers",
       count: "15+ Papers",
     },
     {
       title: "Holiday Packages",
       description: "Vacation learning and activity materials",
       icon: Download,
-      href: "/nursery/baby-class/holiday-packages",
+      href: "/nursery/top-class/holiday-packages",
       count: "8+ Packages",
     },
   ]
@@ -58,9 +58,9 @@ export default function BabyClassPage() {
 
         {/* Page Header */}
         <div className="text-center mb-12">
-          <h1 className="font-playfair font-bold text-4xl md:text-5xl mb-4 text-balance">Baby Class Resources</h1>
+          <h1 className="font-playfair font-bold text-4xl md:text-5xl mb-4 text-balance">Top Class Resources</h1>
           <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
-            Access all learning materials for Baby Class including lesson notes, schemes of work, past papers, and
+            Access all learning materials for Top Class including lesson notes, schemes of work, past papers, and
             holiday packages.
           </p>
         </div>
