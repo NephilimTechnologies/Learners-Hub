@@ -135,7 +135,7 @@ const lessonNotes = [
   },
 ]
 
-export default function BabyClassLessonNotesPage() {
+export default function MiddleClassLessonNotesPage() {
   const [searchQuery, setSearchQuery] = useState("")
   const [filteredNotes, setFilteredNotes] = useState(lessonNotes)
 
@@ -171,8 +171,8 @@ export default function BabyClassLessonNotesPage() {
             Nursery
           </Link>
           <span>/</span>
-          <Link href="/nursery/baby-class" className="hover:text-primary">
-            Baby Class
+          <Link href="/nursery/middle-class" className="hover:text-primary">
+            Middle Class
           </Link>
           <span>/</span>
           <span className="text-foreground">Lesson Notes</span>
@@ -180,9 +180,9 @@ export default function BabyClassLessonNotesPage() {
 
         {/* Page Header */}
         <div className="text-center mb-8">
-          <h1 className="font-playfair font-bold text-4xl md:text-5xl mb-4 text-balance">Baby Class Lesson Notes</h1>
+          <h1 className="font-playfair font-bold text-4xl md:text-5xl mb-4 text-balance">Middle Class Lesson Notes</h1>
           <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
-            Access comprehensive lesson notes for Baby Class covering literacy, mathematics, health habits, creative
+            Access comprehensive lesson notes for Middle Class covering literacy, mathematics, health habits, creative
             arts, science, and social studies following the New Lower Secondary Curriculum (NLSC).
           </p>
         </div>
