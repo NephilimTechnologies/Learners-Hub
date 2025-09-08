@@ -152,7 +152,7 @@ export default function PrimaryThreeNotesPage() {
         {/* Back Navigation */}
         <div className="text-center">
           <Button variant="outline" asChild>
-            <Link href="/primary/primary-1">← Back to Primary One Resources</Link>
+            <Link href="/primary/primary-3">← Back to Primary Three Resources</Link>
           </Button>
         </div>
       </div>
