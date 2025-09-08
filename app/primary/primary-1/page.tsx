@@ -48,8 +48,7 @@ export default function PrimaryOnePage() {
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-foreground mb-4">Primary One Resources</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Access comprehensive learning materials for Primary One students following the New Lower Secondary
-            Curriculum (NLSC)
+            Access comprehensive learning materials for Primary One pupils
           </p>
         </div>
 
