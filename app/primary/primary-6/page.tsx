@@ -7,30 +7,30 @@ import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
 
-export default function PrimaryOnePage() {
+export default function PrimarySixPage() {
   const [searchTerm, setSearchTerm] = useState("")
 
   const resources = [
     {
       title: "Lesson Notes",
       description:
-        "Comprehensive lesson notes for Primary One covering Mathematics, English, Science, and Social Studies",
+        "Comprehensive lesson notes for Primary Six covering Mathematics, English, Science, and Social Studies",
       icon: BookOpen,
-      href: "/primary/primary-1/lesson-notes",
+      href: "/primary/primary-6/lesson-notes",
       color: "bg-blue-500",
     },
     {
       title: "Schemes of Work",
-      description: "Detailed schemes of work for Primary One curriculum planning",
+      description: "Detailed schemes of work for Primary Six curriculum planning",
       icon: FileText,
-      href: "/primary/primary-1/schemes-of-work",
+      href: "/primary/primary-6/schemes-of-work",
       color: "bg-green-500",
     },
     {
       title: "Past Papers",
-      description: "Previous examination papers and practice tests for Primary One",
+      description: "Previous examination papers and practice tests for Primary Six",
       icon: Calendar,
-      href: "/primary/primary-1/past-papers",
+      href: "/primary/primary-6/past-papers",
       color: "bg-purple-500",
     },
   ]
@@ -46,9 +46,9 @@ export default function PrimaryOnePage() {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-foreground mb-4">Primary One Resources</h1>
+          <h1 className="text-4xl font-bold text-foreground mb-4">Primary Sic Resources</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Access comprehensive learning materials for Primary One pupils
+            Access comprehensive learning materials for Primary Six pupils
           </p>
         </div>
 
