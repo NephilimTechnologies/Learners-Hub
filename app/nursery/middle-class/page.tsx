@@ -58,7 +58,7 @@ export default function MiddleClassPage() {
 
         {/* Page Header */}
         <div className="text-center mb-12">
-          <h1 className="font-playfair font-bold text-4xl md:text-5xl mb-4 text-balance">Baby Class Resources</h1>
+          <h1 className="font-playfair font-bold text-4xl md:text-5xl mb-4 text-balance">Middle Class Resources</h1>
           <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
             Access all learning materials for Middle Class including lesson notes, schemes of work, past papers, and
             holiday packages.
