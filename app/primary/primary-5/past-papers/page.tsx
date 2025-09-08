@@ -129,7 +129,7 @@ export default function PrimaryFivePastPapersPage() {
         {/* Back Navigation */}
         <div className="text-center">
           <Button variant="outline" asChild>
-            <Link href="/primary/primary-1">← Back to Primary One Resources</Link>
+            <Link href="/primary/primary-5">← Back to Primary Five Resources</Link>
           </Button>
         </div>
       </div>
