@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import Link from "next/link"
 
-export default function PrimaryOneNotesPage() {
+export default function PrimaryFourNotesPage() {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedSubject, setSelectedSubject] = useState("all")
 
@@ -86,9 +86,9 @@ export default function PrimaryOneNotesPage() {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-foreground mb-4">Primary One Lesson Notes</h1>
+          <h1 className="text-4xl font-bold text-foreground mb-4">Primary Four Lesson Notes</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Download comprehensive lesson notes for Primary One students
+            Download comprehensive lesson notes for Primary Four pupils
           </p>
         </div>
 
