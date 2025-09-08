@@ -6,34 +6,34 @@ import { Button } from "@/components/ui/button"
 import { FileText, BookOpen, Search, Download } from "lucide-react"
 import Link from "next/link"
 
-export default function BabyClassPage() {
+export default function MiddleClassPage() {
   const resources = [
     {
       title: "Lesson Notes",
       description: "Comprehensive lesson notes for Baby Class",
       icon: FileText,
-      href: "/nursery/baby-class/lesson-notes",
+      href: "/nursery/middle-class/lesson-notes",
       count: "25+ Notes",
     },
     {
       title: "Schemes of Work",
       description: "Structured learning plans and curricula",
       icon: BookOpen,
-      href: "/nursery/baby-class/schemes-of-work",
+      href: "/nursery/middle-class/schemes-of-work",
       count: "12+ Schemes",
     },
     {
       title: "Past Papers",
       description: "Previous examination and assessment papers",
       icon: Search,
-      href: "/nursery/baby-class/past-papers",
+      href: "/nursery/middle-class/past-papers",
       count: "15+ Papers",
     },
     {
       title: "Holiday Packages",
       description: "Vacation learning and activity materials",
       icon: Download,
-      href: "/nursery/baby-class/holiday-packages",
+      href: "/nursery/middle-class/holiday-packages",
       count: "8+ Packages",
     },
   ]
@@ -53,14 +53,14 @@ export default function BabyClassPage() {
             Nursery
           </Link>
           <span>/</span>
-          <span className="text-foreground">Baby Class</span>
+          <span className="text-foreground">Middle Class</span>
         </nav>
 
         {/* Page Header */}
         <div className="text-center mb-12">
           <h1 className="font-playfair font-bold text-4xl md:text-5xl mb-4 text-balance">Baby Class Resources</h1>
           <p className="text-lg text-muted-foreground text-pretty max-w-2xl mx-auto">
-            Access all learning materials for Baby Class including lesson notes, schemes of work, past papers, and
+            Access all learning materials for Middle Class including lesson notes, schemes of work, past papers, and
             holiday packages.
           </p>
         </div>
@@ -92,7 +92,7 @@ export default function BabyClassPage() {
         {/* Quick Access Info */}
         <Card className="bg-muted/30">
           <CardContent className="p-6">
-            <h3 className="font-playfair font-bold text-xl mb-4">Baby Class Curriculum</h3>
+            <h3 className="font-playfair font-bold text-xl mb-4">Middle Class Curriculum</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <h4 className="font-semibold mb-2">Core Subjects</h4>
