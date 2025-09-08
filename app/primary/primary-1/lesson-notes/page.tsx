@@ -88,7 +88,7 @@ export default function PrimaryOneNotesPage() {
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-foreground mb-4">Primary One Lesson Notes</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Download comprehensive lesson notes for Primary One students
+            Download comprehensive lesson notes for Primary One pupils
           </p>
         </div>
 
