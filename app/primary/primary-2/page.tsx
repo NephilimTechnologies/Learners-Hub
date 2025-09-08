@@ -16,21 +16,21 @@ export default function PrimaryOnePage() {
       description:
         "Comprehensive lesson notes for Primary One covering Mathematics, English, Science, and Social Studies",
       icon: BookOpen,
-      href: "/primary/primary-1/lesson-notes",
+      href: "/primary/primary-2/lesson-notes",
       color: "bg-blue-500",
     },
     {
       title: "Schemes of Work",
       description: "Detailed schemes of work for Primary One curriculum planning",
       icon: FileText,
-      href: "/primary/primary-1/schemes-of-work",
+      href: "/primary/primary-2/schemes-of-work",
       color: "bg-green-500",
     },
     {
       title: "Past Papers",
       description: "Previous examination papers and practice tests for Primary One",
       icon: Calendar,
-      href: "/primary/primary-1/past-papers",
+      href: "/primary/primary-2/past-papers",
       color: "bg-purple-500",
     },
   ]
@@ -46,10 +46,9 @@ export default function PrimaryOnePage() {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-foreground mb-4">Primary One Resources</h1>
+          <h1 className="text-4xl font-bold text-foreground mb-4">Primary Two Resources</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Access comprehensive learning materials for Primary One students following the New Lower Secondary
-            Curriculum (NLSC)
+            Access comprehensive learning materials for Primary Two pupils.
           </p>
         </div>
 
