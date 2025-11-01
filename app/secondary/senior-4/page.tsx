@@ -14,30 +14,30 @@ export default function SeniorOnePage() {
     {
       title: "Lesson Notes",
       description:
-        "Comprehensive lesson notes for Senior One covering Mathematics, English, Physics, Chemistry, Biology, and more",
+        "Comprehensive lesson notes for Senior Four covering Mathematics, English, Physics, Chemistry, Biology, and more",
       icon: BookOpen,
-      href: "/secondary/senior-1/lesson-notes",
+      href: "/secondary/senior-4/lesson-notes",
       color: "bg-blue-500",
     },
     {
       title: "Schemes of Work",
-      description: "Detailed schemes of work for Senior One curriculum planning",
+      description: "Detailed schemes of work for Senior Four curriculum planning",
       icon: FileText,
-      href: "/secondary/senior-1/schemes-of-work",
+      href: "/secondary/senior-4/schemes-of-work",
       color: "bg-green-500",
     },
     {
       title: "Past Papers",
-      description: "Previous examination papers and practice tests for Senior One",
+      description: "Previous examination papers and practice tests for Senior Five",
       icon: Calendar,
-      href: "/secondary/senior-1/past-papers",
+      href: "/secondary/senior-5/past-papers",
       color: "bg-purple-500",
     },
     {
       title: "Holiday Packages",
-      description: "Holiday revision packages and assignments for Senior One students",
+      description: "Holiday revision packages and assignments for Senior Four students",
       icon: Package,
-      href: "/secondary/senior-1/holiday-packages",
+      href: "/secondary/senior-4/holiday-packages",
       color: "bg-orange-500",
     },
   ]
@@ -55,7 +55,7 @@ export default function SeniorOnePage() {
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-foreground mb-4">Senior One Resources</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Access comprehensive learning materials for Senior One students following the New Lower Secondary Curriculum
+            Access comprehensive learning materials for Senior Four students following the New Lower Secondary Curriculum
             (NLSC)
           </p>
         </div>
