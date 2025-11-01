@@ -11,12 +11,12 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 const holidayPackages = [
   {
     id: 1,
-    title: "Mathematics Holiday Package - December 2023",
+    title: "IRE",
     subject: "Mathematics",
-    holiday: "December Holiday",
+    holiday: "Seminar guide",
     year: "2023",
-    description: "Comprehensive mathematics revision covering all Term 1 and Term 2 topics with practice exercises",
-    downloadUrl: "/packages/senior1-math-dec2023.pdf",
+    description: "",
+    downloadUrl: "/packages/senior4-math-dec2023.pdf",
     previewUrl: "/preview/senior1-math-dec2023",
     duration: "4 weeks",
     exercises: 50,
