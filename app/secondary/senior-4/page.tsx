@@ -30,7 +30,7 @@ export default function SeniorOnePage() {
       title: "Past Papers",
       description: "Previous examination papers and practice tests for Senior Five",
       icon: Calendar,
-      href: "/secondary/senior-5/past-papers",
+      href: "/secondary/senior-4/past-papers",
       color: "bg-purple-500",
     },
     {
