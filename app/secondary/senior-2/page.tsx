@@ -14,28 +14,28 @@ export default function SeniorTwoPage() {
     {
       title: "Lesson Notes",
       description:
-        "Comprehensive lesson notes for Senior One covering Mathematics, English, Physics, Chemistry, Biology, and more",
+        "Comprehensive lesson notes for Senior Two covering Mathematics, English, Physics, Chemistry, Biology, and more",
       icon: BookOpen,
       href: "/secondary/senior-2/lesson-notes",
       color: "bg-blue-500",
     },
     {
       title: "Schemes of Work",
-      description: "Detailed schemes of work for Senior One curriculum planning",
+      description: "Detailed schemes of work for Senior Two curriculum planning",
       icon: FileText,
       href: "/secondary/senior-2/schemes-of-work",
       color: "bg-green-500",
     },
     {
       title: "Past Papers",
-      description: "Previous examination papers and practice tests for Senior One",
+      description: "Previous examination papers and practice tests for Senior Two",
       icon: Calendar,
       href: "/secondary/senior-2/past-papers",
       color: "bg-purple-500",
     },
     {
       title: "Holiday Packages",
-      description: "Holiday revision packages and assignments for Senior One students",
+      description: "Holiday revision packages and assignments for Senior Two students",
       icon: Package,
       href: "/secondary/senior-2/holiday-packages",
       color: "bg-orange-500",
