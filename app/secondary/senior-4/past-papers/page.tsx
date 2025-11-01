@@ -11,15 +11,15 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 const pastPapers = [
   {
     id: 1,
-    title: "Mathematics Past Paper - 2023 Term 1",
-    subject: "Mathematics",
+    title: "CRE Past Paper",
+    subject: "CRE",
     year: "2023",
     term: "Term 1",
     type: "End of Term Exam",
-    description: "Comprehensive mathematics examination covering algebra, geometry, and statistics",
-    downloadUrl: "/papers/senior1-math-2023-t1.pdf",
-    previewUrl: "/preview/senior1-math-2023-t1",
-    duration: "2 hours 30 minutes",
+    description: "Comprehensive CRE examination",
+    downloadUrl: "/papers/senior4-CRE-1.pdf",
+    previewUrl: "/preview/senior4-CRE-1",
+    duration: "2 hours 15 minutes",
     marks: 100,
   },
   {
